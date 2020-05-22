@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="score_display_height_portrait">304dp</dimen>
+    <dimen name="default_margin">8dp</dimen>
+    <dimen name="default_margin_half">4dp</dimen>
+    <dimen name="default_margin_quarter">2dp</dimen>
+    <dimen name="button_margin">12dp</dimen>
+    <dimen name="min_longDialog_length">312dp</dimen>
+    <dimen name="min_shortDialog_length">232dp</dimen>
+    <dimen name="playerDisplayView_score_textSize_medium">68</dimen>
+    <dimen name="playerDisplayView_name_textSize_medium">24</dimen>
+    <dimen name="playerDisplayView_score_textSize_small">44</dimen>
+    <dimen name="playerDisplayView_name_textSize_small">18</dimen>
+    <dimen name="controlPanel_padding">0dp</dimen>
+</resources>

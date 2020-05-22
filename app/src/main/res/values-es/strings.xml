@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Marcador Increíble</string>
+    <string name="reset">Reajustar</string>
+    <string name="ok">OK</string>
+    <string name="done">Bueno</string>
+    <string name="cancel">Cancelar</string>
+    <string name="add">+</string>
+    <string name="subtract">-</string>
+    <string name="reset_scores_only">Restablecer las Puntuaciones</string>
+    <string name="reset_all_data">Restablecer Todo</string>
+    <string name="zero">0</string>
+    <string name="score_summary_subject">Informe de %s</string>
+    <string name="send_summary">Enviar informe a través de</string>
+    <string name="thank_you_message">Gracias por usar %s!</string>
+    <string name="set_as_score">Nuevo Puntaje</string>
+    <string name="shuffle_description">Barajar</string>
+    <string name="reset_colors">Restablecer los Colores</string>
+    <string name="leaderboard_button">Tabla de clasificación</string>
+    <string name="back">Regresa</string>
+    <string name="send">Enviar</string>
+    <string name="player">Jugador</string>
+    <string name="how_many_players">Numero de jugadores:</string>
+    <string name="leaderboard">Tabla de Clasificación</string>
+</resources>

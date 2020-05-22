@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundMain"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="@dimen/default_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/control_panel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_h50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.50" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.33" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v67"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.67" />
+
+        <com.joshuacerdenia.amazingscoreboard.PlayerDisplayView
+            android:id="@+id/player_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/default_margin_quarter"
+            android:layout_marginBottom="@dimen/default_margin_quarter"
+            android:background="@color/colorPlayer1"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_h50"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v33"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:name_textSize="@dimen/playerDisplayView_name_textSize_small"
+            app:score_textSize="@dimen/playerDisplayView_score_textSize_small" >
+
+            <ImageButton
+                android:id="@+id/leaderboard_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.75"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/leaderboard_button"
+                android:padding="@dimen/default_margin_half"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_leaderboard" />
+        </com.joshuacerdenia.amazingscoreboard.PlayerDisplayView>
+
+        <com.joshuacerdenia.amazingscoreboard.PlayerDisplayView
+            android:id="@+id/player_2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/default_margin_quarter"
+            android:layout_marginEnd="@dimen/default_margin_quarter"
+            android:background="@color/colorPlayer2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v33"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline_h50"
+            app:name_textSize="@dimen/playerDisplayView_name_textSize_small"
+            app:score_textSize="@dimen/playerDisplayView_score_textSize_small" />
+
+        <com.joshuacerdenia.amazingscoreboard.PlayerDisplayView
+            android:id="@+id/player_3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/default_margin_quarter"
+            android:layout_marginEnd="@dimen/default_margin_quarter"
+            android:layout_marginBottom="@dimen/default_margin_quarter"
+            android:background="@color/colorPlayer3"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_h50"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v67"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v33"
+            app:layout_constraintTop_toTopOf="parent"
+            app:name_textSize="@dimen/playerDisplayView_name_textSize_small"
+            app:score_textSize="@dimen/playerDisplayView_score_textSize_small" />
+
+        <com.joshuacerdenia.amazingscoreboard.PlayerDisplayView
+            android:id="@+id/player_4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/default_margin_quarter"
+            android:layout_marginTop="@dimen/default_margin_quarter"
+            android:layout_marginEnd="@dimen/default_margin_quarter"
+            android:background="@color/colorPlayer4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v67"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v33"
+            app:layout_constraintTop_toTopOf="@+id/guideline_h50"
+            app:name_textSize="@dimen/playerDisplayView_name_textSize_small"
+            app:score_textSize="@dimen/playerDisplayView_score_textSize_small" />
+
+        <com.joshuacerdenia.amazingscoreboard.PlayerDisplayView
+            android:id="@+id/player_5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/default_margin_quarter"
+            android:layout_marginBottom="@dimen/default_margin_quarter"
+            android:background="@color/colorPlayer5"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_h50"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v67"
+            app:layout_constraintTop_toTopOf="parent"
+            app:name_textSize="@dimen/playerDisplayView_name_textSize_small"
+            app:score_textSize="@dimen/playerDisplayView_score_textSize_small" />
+
+        <com.joshuacerdenia.amazingscoreboard.PlayerDisplayView
+            android:id="@+id/player_6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/default_margin_quarter"
+            android:layout_marginTop="@dimen/default_margin_quarter"
+            android:background="@color/colorPlayer6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v67"
+            app:layout_constraintTop_toTopOf="@+id/guideline_h50"
+            app:name_textSize="@dimen/playerDisplayView_name_textSize_small"
+            app:score_textSize="@dimen/playerDisplayView_score_textSize_small" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.joshuacerdenia.amazingscoreboard.ControlPanelView
+        android:id="@+id/control_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:padding="@dimen/controlPanel_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

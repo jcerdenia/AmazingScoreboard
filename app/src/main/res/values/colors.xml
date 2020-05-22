@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBackgroundMain">@android:color/background_light</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">@android:color/background_dark</color>
+    <color name="colorAccent">#3F51B5</color>
+    <color name="colorPlayer1">#b23a48</color>
+    <color name="colorPlayer3">#F94144</color>
+    <color name="colorPlayer5">#F77F00</color>
+    <color name="colorPlayer7">#F9C74F</color>
+    <color name="colorPlayer2">#90BE6D</color>
+    <color name="colorPlayer4">#43AA8B</color>
+    <color name="colorPlayer6">#577590</color>
+    <color name="colorPlayer8">#5C6672</color>
+    <color name="colorDefaultText">@android:color/primary_text_dark</color>
+</resources>
